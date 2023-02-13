@@ -8,7 +8,6 @@
 }
 
 html{
-    background-color: #1a1a21;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -17,6 +16,15 @@ html{
     max-width: 1300px;
     padding: 0px 80px;
     margin: auto;
+}
+
+.btn{
+    padding: 0.5em 2em;
+    margin-top: 0.5em;
+    border-radius: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    background-color: crimson;
 }
 
 .space{
@@ -65,6 +73,7 @@ html{
     padding: 10px;
     width: 100%;
     height: 100vh;
+    background-color: #1a1a21;
     display: flex;
     justify-content: space-evenly;
 }
@@ -106,14 +115,41 @@ html{
 
 /* about section */
 .about{
+    width: 100%;
+    height: 100vh;
+    background-color: #23232d;
+}
+
+
+/* services section */
+.services{
+    height: 100vh;
     padding: 100px;
+    background-color: #1a1a21;
+}
+
+.services .text{
+    display: flex;
+    justify-content: center;
+}
+
+.services .text{
+    font-size: 30;
+    color: white;
+}
+
+.services .text span{
+    color: crimson;
+}
+
+.services .cards{
     display: flex;
     justify-content: space-evenly;
 }
 
-.about .card{
+.services .card{
     width: 25%;
-    height: auto;
+    height: min-content;
     padding: 1em 2em;
     border-radius: 20px;
     background-color: #23232d;
@@ -121,7 +157,7 @@ html{
     text-align: center;
 }
 
-.about .card .btn{
+.services .card .btn{
     padding: 0.5em 2em;
     margin-top: 0.5em;
     border-radius: 20px;
@@ -130,6 +166,6 @@ html{
     background-color: crimson;
 }
 
-.about .card .btn:hover{
+.services .card .btn:hover{
     background-color: rgb(193, 16, 52);
 }
