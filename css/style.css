@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    background-color: #1a1a21;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* reusable */
+.max-width{
+    max-width: 1300px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
+.space{
+    padding: 40px;
+}
+
+/* navbar styling */
+.navbar{
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    background: #1a1a21;
+    /* background: #001832; */
+}
+
+.navbar .logo a{
+    color: crimson;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu li{
+    padding: 1em;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+/* home section */
+.home{
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home .avatar{
+    padding: 20px;
+    float: left;
+}
+
+.home .avatar img{
+    float: right;
+    width: 20rem;
+    height: 20rem;
+    border-color: crimson;
+    border: 30px;
+}
+
+.home .content{
+    padding-top: 100px;
+    float: left;
+    color: #fff;
+    font-size: 25;
+}
+
+.home .content h4, h3{
+    font-weight: 300;
+}
+
+.home .content h6{
+    font-weight: 300;
+    font-size: 15;
+    color: crimson;
+}
+
+.home .content span{
+    color: crimson;
+}
+
+
+/* about section */
+.about{
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about .card{
+    width: 25%;
+    height: auto;
+    padding: 1em 2em;
+    border-radius: 20px;
+    background-color: #23232d;
+    color: #fff;
+    text-align: center;
+}
+
+.about .card .btn{
+    padding: 0.5em 2em;
+    margin-top: 0.5em;
+    border-radius: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    background-color: crimson;
+}
+
+.about .card .btn:hover{
+    background-color: rgb(193, 16, 52);
+}
